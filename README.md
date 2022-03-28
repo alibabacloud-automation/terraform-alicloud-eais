@@ -3,7 +3,7 @@ Terraform Module for creating Elastic Accelerator Instance on Alibaba Cloud.
 terraform-alicloud-eais
 =====================================================================
 
-English | [简体中文](README-CN.md)
+English | [简体中文](https://github.com/terraform-alicloud-modules/terraform-alicloud-eais/blob/main/README-CN.md)
 
 This module is used to create elastic accelerator instance with `EAIS` on Alibaba Cloud.
 
@@ -16,6 +16,7 @@ These types of resources are supported:
 ```hcl
 module "example" {
   source            = "terraform-alicloud-modules/eais/alicloud"
+  create_instance   = true
   instance_type     = "eais.ei-a6.2xlarge"
   name              = "tf-eais"
   security_group_id = "sg-abc12345"
@@ -37,7 +38,7 @@ module "example" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | > = 1.0.11 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | > = 0.13 |
 | <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | > = 1.137.0 |
 
 ## Providers
