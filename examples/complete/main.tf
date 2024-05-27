@@ -1,5 +1,5 @@
 provider "alicloud" {
-  region = "cn-beijing"
+  region = "cn-hangzhou"
 }
 
 module "vpc" {
@@ -9,7 +9,7 @@ module "vpc" {
   vpc_cidr           = "172.16.0.0/16"
   vswitch_name       = "tf-test-eais"
   vswitch_cidrs      = ["172.16.0.0/21"]
-  availability_zones = ["cn-beijing-h"]
+  availability_zones = ["cn-hangzhou-h"]
 }
 
 module "security_group" {
